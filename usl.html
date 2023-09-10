@@ -6,61 +6,62 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-<title>Прайс-лист</title>
+<title>Price</title>
 </head>
 <body>
 
   <header>
-    <h1>Прайс-лист</h1>
+    <h1>Price</h1>
     <div class="toggle">
-      <label>Обычный </label>
+      <label>Regular </label>
       <div class="toggle-btn">
         <input type="checkbox" class="checkbox" id="checkbox" />
         <label class="sub" id="sub" for="checkbox">
           <div class="circle"></div>
         </label>
       </div>
-      <label>Срочный ответ</label>
+      <label>Urgent response</label>
     </div>
   </header>
+  <p style="margin-bottom: 40px;" align="CENTER"> <button class="btn"><a href="us.html" style="text-decoration: none; color: white;">Русский язык</a></button></p> 
   <div class="cards">
     <div class="card shadow">
       <ul>
-        <li class="pack">Один вопрос</li>
-        <li id="basic" class="price bottom-bar">18L</li>
-        <li class="bottom-bar">Один вопрос с развернутым ответом на него</li>
-        <li><a href="https://t.me/voprosnataro" style="text-decoration: none;"><button class="btn">Заказать расклад</button></a></li>
+        <li class="pack">One question</li>
+        <li id="basic" class="price bottom-bar">1$</li>
+        <li class="bottom-bar">One question with a detailed answer</li>
+        <li><a href="https://t.me/voprosnataro" style="text-decoration: none;"><button class="btn">Order a Tarot spread</button></a></li>
       </ul>
     </div>
     <div class="card active">
       <ul>
         <li class="pack">1+1</li>
-        <li id="professional" class="price bottom-bar">26.9L</li>
-        <li class="bottom-bar">Один вопрос с развернутым ответом + ещё один вопрос, с развернутым ответом на него</li>
-        <li class="bottom-bar">Только если относится к одной теме/ситуации</li>
-        <li><a href="https://t.me/voprosnataro" style="text-decoration: none;"><button class="btn active-btn">Заказать расклад</button></a></li>
+        <li id="professional" class="price bottom-bar">1.49$</li>
+        <li class="bottom-bar">One question with a detailed answer + another question with a detailed answer to it</li>
+        <li class="bottom-bar">Only if it relates to one topic/situation</li>
+        <li><a href="https://t.me/voprosnataro" style="text-decoration: none;"><button class="btn active-btn">Order a Tarot spread</button></a></li>
       </ul>
     </div>
     <div class="card shadow">
       <ul>
         <li class="pack">Безлимит</li>
-        <li id="master" class="price bottom-bar">69.8L</li>
-        <li class="bottom-bar">Независимо от количества вопросов на темы работы, любви, ситуаций, взаимоотношений и т.п</li>
-        <li class="bottom-bar">Только на одну из выбранных тем</li>
-        <li><button class="btn"><a href="https://t.me/voprosnataro" style="text-decoration: none;">Заказать расклад</button></a></li>
+        <li id="master" class="price bottom-bar">3.88$</li>
+        <li class="bottom-bar">Regardless of the number of questions on the topics of work, love, situations, relationships, etc.</li>
+        <li class="bottom-bar">Only on one of the selected topics</li>
+        <li><button class="btn"><a href="https://t.me/voprosnataro" style="text-decoration: none;">Order a Tarot spread</button></a></li>
       </ul>
     </div>
   </div>
   <header>
-    <h1 align="CENTER">Информация</h1><br>
-    <p>– По поводу ТикТока: я не выкладываю истории без разрешения клиентов, даже после их разрешения имена и возраст меняются, так как я за сохранение анонимности. Любая наша переписка останется в тайне.</p>
-    <p>– Абсолютно ко всем клиентам отношусь толлератно, неважно какой вы нации, религии, с какой предисторией пришли и т.п</p>
+    <h1 align="CENTER">Information</h1><br>
+    <p>– Regarding TikTok: I do not post stories without the permission of clients, even after their permission, names and ages change, since I am for maintaining anonymity. Any correspondence between us will remain confidential.</p>
+    <p>– I treat absolutely all clients tolerantly, no matter what nation, religion you are, what background you come with, etc.</p>
   </header>
 
     <header>
-    <h1 align="CENTER">Что нужно для расклада?</h1><br>
-    <p>– Нужны имена спрашиваемых людей, возраст (дата рождения), либо же, если нет информации вообще никакой, то фото</p>
-    <p>– Предыстория желательно также нужна, с помощью неё карты смогут дать подробный и точный ответ на ваш вопрос</p>
+    <h1 align="CENTER">What is needed for a tarot spread?</h1><br>
+    <p>– You need the names of the people being asked, age (date of birth), or, if there is no information at all, then a photo</p>
+    <p>– It is advisable to also need a background history; with its help, cards can give a detailed and accurate answer to your question.</p>
   </header>
   <script src="script.js"></script>
 </body>
@@ -303,12 +304,11 @@ const master = document.getElementById("master");
 const basic = document.getElementById("basic");
 
 checkbox.addEventListener("click", () => {
-  basic.textContent = basic.textContent === "36L" ? "18L" : "36L";
+  basic.textContent = basic.textContent === "2$" ? "1$" : "2$";
   professional.textContent =
-    professional.textContent === "53.8L" ? "26.9L" : "53.8L";
-  master.textContent = master.textContent === "139.6L" ? "69.8L" : "139.6L";
+    professional.textContent === "2.98$" ? "1.49$ " : "2.98$";
+  master.textContent = master.textContent === "7.76$" ? "3.88$" : "7.76$";
 });
 </script>
 </body>
 </html>
-
